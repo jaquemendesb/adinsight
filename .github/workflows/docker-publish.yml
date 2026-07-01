@@ -28,8 +28,8 @@ jobs:
           file: apps/web/Dockerfile
           push: true
           tags: |
-            jeanberwanger/adinsight-web:latest
-            jeanberwanger/adinsight-web:${{ github.sha }}
+            jaquemendesb/adinsight-web:latest
+            jaquemendesb/adinsight-web:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -55,7 +55,7 @@ jobs:
           file: apps/api/Dockerfile
           push: true
           tags: |
-            jeanberwanger/adinsight-api:latest
-            jeanberwanger/adinsight-api:${{ github.sha }}
+            jaquemendesb/adinsight-api:latest
+            jaquemendesb/adinsight-api:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
